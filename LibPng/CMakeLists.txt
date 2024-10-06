@@ -56,6 +56,8 @@ endif(USING_UNBUNDLED_ZLIB)
 
 install(TARGETS LibPng
     EXPORT PDFHummusTargets
+    EXPORT LibPng
+
     RUNTIME DESTINATION bin COMPONENT dependencies
     ARCHIVE DESTINATION lib${LIB_SUFFIX} COMPONENT dependencies
     LIBRARY DESTINATION lib${LIB_SUFFIX} COMPONENT dependencies
